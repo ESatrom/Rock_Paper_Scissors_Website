@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock, Paper, Scissors!</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body style="background-color: #ddd;">
+        <div class="playerButton" id="rockButton">
+            <img src="./images/Rock.png" alt="Rock Hand Sign">
+            <p>Rock</p>
+        </div>
+        <div class="playerButton" id="paperButton">
+            <img src="./images/Paper.png" alt="Paper Hand Sign">
+            <p>Paper</p>
+        </div>
+        <div class="playerButton" id="scissorsButton">
+            <img src="./images/Scissors.png" alt="Scissors Hand Sign">
+            <p>Scissors</p>
+        </div>
+
+
+        <div class="player selectionDisplay">
+            <p id="playerThrowText" class="updatingText"></p>
+            <img id="playerThrowImage">    
+        </div>
+
+        <div class="centerUI">
+            <p>VS</p>
+            <br><br>
+            <p id="resultText" class="updatingText"></p>
+            <br>
+            <p id="scoreTally" class="updatingText" value="0 - 0 - 0"></p>
+        </div>
+        
+        <div class="computer selectionDisplay">
+            <p id="computerThrowText" class="updatingText"></p>
+            <img id="computerThrowImage">    
+        </div>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Monitor-354.svg" class="computerImage">
+        
+        <script src="logic.js"></script>
+    </body>
+</html>

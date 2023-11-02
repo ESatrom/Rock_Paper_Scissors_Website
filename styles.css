@@ -1,0 +1,127 @@
+:root {
+    --button-size:min(200px,20vh,calc(80vw / 3));
+}
+
+.playerButton {
+    width: var(--button-size);
+    height: var(--button-size);
+    background-color: gray;
+    position: absolute;
+    cursor: pointer;
+    left:5vw
+}
+
+.updatingText::after {
+    content: attr(value);
+}
+
+.playerButton p {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    left:0px;
+    right:0px;
+    color:white;
+    font-size: calc(var(--button-size) * 0.15);
+    line-height: 0px;
+}
+.playerButton img {
+    position: absolute;
+
+    left:0px;
+    right:0px;
+    margin-left: auto;
+    margin-right: auto;
+
+    top:0px;
+    bottom:calc(var(--button-size) * 0.15);
+    margin-top:auto;
+    margin-bottom:auto;
+
+    width: 80%;
+}
+
+#rockButton {
+    top:10vh;
+}
+
+#paperButton {
+    top:calc(20vh + var(--button-size));
+}
+
+#scissorsButton {
+    top:calc(30vh + 2 * var(--button-size));
+}
+
+.computer img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.selectionDisplay {
+    width: calc(2 * var(--button-size));
+    height: calc(2 * var(--button-size));
+    position: absolute;
+    top:0px;
+    bottom:0px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.selectionDisplay img {
+    width:90%;
+}
+
+.selectionDisplay p {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    left:0px;
+    right:0px;
+    color:black;
+    font-size: 40px;
+}
+
+.computer {
+    right:calc(var(--button-size) + 10vw)
+}
+
+.player {
+    left:calc(var(--button-size) + 10vw)
+}
+
+.computerImage {
+    transform: scaleX(-1);
+    width:var(--button-size);
+    top:0px;
+    bottom:0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: absolute;
+    right: 5vw;
+}
+
+.centerUI p {
+    font-size: 40px;
+    color: black;
+    left:0px;
+    right:0px;
+    text-align: center;
+}
+
+.centerUI {
+    left:0px;
+    right:0px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    top:0px;
+    bottom:0px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    position: absolute;
+
+    width: var(--button-size);
+    height: var(--button-size);
+}
